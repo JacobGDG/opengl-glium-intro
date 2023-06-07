@@ -1,3 +1,6 @@
+// TODO: Split into functions/refactor/learn more about whats going on.
+// TODO: Can I add debug information to the window?
+
 #[macro_use]
 extern crate glium;
 
@@ -28,7 +31,7 @@ fn main() {
     let vertex_buffer = glium::VertexBuffer::new(&display, &shape).unwrap();
     let indices = glium::index::NoIndices(glium::index::PrimitiveType::TrianglesList);
 
-    const TARGET_FPS: u64 = 60;
+    const TARGET_FPS: u64 = 10;
 
     let vertex_shader_src = r#"
      #version 140
